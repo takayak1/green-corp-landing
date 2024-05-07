@@ -52,15 +52,34 @@ button {
 
 .about__info {
     max-width: 550px;
+    
+}
+
+.about__images {
+    position: relative;
 }
 
 .about__image {
     width: 500px;
 }
 
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 .about__sun-image {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100px;
     height: 100px;
+    animation: rotation linear 10s infinite;
 }
 
 .about h1 {
@@ -192,3 +211,42 @@ footer {
 .footer__links a {
     margin-bottom: 15px;
 }
+
+/* @media (max-width: 320px) {}
+
+@media (max-width: 720px) {
+    header {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    section {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    footer {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .header__logo {
+        height: 20px;
+    }
+
+    h1 h2 h3 h4 h5 h6 {
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    .about__image {
+        width: 280px;
+    }
+
+    .about__sun-image {
+        width: 75px;
+        height: 75px;
+    }
+} */
